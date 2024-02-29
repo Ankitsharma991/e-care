@@ -5,6 +5,11 @@ dotenv.config();
 
 const port = process.env.PORT;
 
+require("./db");
+const authRoutes = require("./routes/authRoutes");
+
+app.use("/auth", authRoutes);
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
