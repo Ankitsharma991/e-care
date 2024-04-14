@@ -11,7 +11,7 @@ const authRoutes = require("./routes/authRoutes");
 app.use("/auth", authRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Welcome to Shareify!!");
 });
 
 app.listen(port, () => {
